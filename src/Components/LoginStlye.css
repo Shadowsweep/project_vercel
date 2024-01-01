@@ -1,0 +1,24 @@
+.sign-in-overlay {
+    height: 1024px;
+    width: 1440px;
+  }
+  
+  .sign-in-overlay .sign-in-page-instance {
+    left: 100px !important;
+    top: 204px !important;
+  }
+  
+  .sign-in-overlay .LOGO-2 {
+    height: 144px !important;
+    left: 147px !important;
+    position: absolute !important;
+    top: 236px !important;
+    width: 189px !important;
+  }
+  
+  .sign-in-overlay .icon-instance-node-2 {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+  }
+  

@@ -1,0 +1,23 @@
+.navbar {
+    /* Base styles for the navbar */
+    position: fixed; /* Ensures navbar stays in place on scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    /* Add background color, padding, etc. as needed */
+  }
+  
+  .sticky {
+    /* Styles when navbar becomes sticky */
+    background-color: #fff; /* Adjust as needed */
+    z-index: 999; /* Ensures navbar stays above other content */
+  }
+  
+  @media (min-width: 768px) {
+    /* Desktop view styles go here */
+    .responsive-container {
+      flex-direction: row; /* Stack items horizontally on larger screens */
+      max-width: 1200px; /* Adjust max-width for larger screens */
+    }
+  }
