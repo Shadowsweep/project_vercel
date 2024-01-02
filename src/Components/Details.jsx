@@ -7,34 +7,7 @@ import { useState,useEffect , useRef} from "react";
 
 const Details = () => {
   
-  const [position, setPosition] = useState(0);
-  const rowRef = useRef(null);
-
-  useEffect(() => {
-    const cardWidth = 320; // Adjust the card width as needed
-    const numCards = 4; // Adjust the number of cards in the row
-    const maxPosition = -(cardWidth * numCards);
-
-    const handleTransitionEnd = () => {
-      // Reset to the beginning when it reaches the end
-      setPosition(0);
-    };
-
-    rowRef.current.addEventListener('transitionend', handleTransitionEnd);
-
-    // Cleanup event listener
-    return () => {
-      rowRef.current.removeEventListener('transitionend', handleTransitionEnd);
-    };
-  }, []);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setPosition((prevPosition) => prevPosition - 320); // Adjust the value based on card width
-    }, 3000); // Adjust the interval as needed
-
-    return () => clearInterval(intervalId);
-  }, []);
+ 
 
  
   // const [position, setPosition] = useState(0);
@@ -167,7 +140,7 @@ const Details = () => {
     display: 'flex',
     justifyContent: 'space-between', // Adjust as needed
     marginTop: '5px',
-    transform: `translateX(${position}px)`, // Update the transform property
+    // transform: `translateX(${position}px)`, // Update the transform property
     transition: 'transform 0.5s ease',
     flexWrap: 'nowrap', // Prevent cards from wrapping to the next line
     overflow: 'hidden', // Hide the overflow to prevent scrollbars
@@ -184,7 +157,7 @@ const Details = () => {
       {/* <Container> */}
         
 
-        <div style={rowStyle} ref={rowRef}   >
+        <div style={rowStyle}  >
       <BlogCard style={cardStyle} />
       <BlogCard style={cardStyle} />
       <BlogCard style={cardStyle} />

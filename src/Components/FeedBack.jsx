@@ -8,34 +8,34 @@ import { useState,useEffect , useRef} from "react";
 
 const FeedBack = () => {
 
-    const [position, setPosition] = useState(0);
-  const rowRef = useRef(null);
+  //   const [position, setPosition] = useState(0);
+  // const rowRef = useRef(null);
 
-  useEffect(() => {
-    const cardWidth = 320; // Adjust the card width as needed
-    const numCards = 4; // Adjust the number of cards in the row
-    const maxPosition = -(cardWidth * numCards);
+  // useEffect(() => {
+  //   const cardWidth = 320; // Adjust the card width as needed
+  //   const numCards = 4; // Adjust the number of cards in the row
+  //   const maxPosition = -(cardWidth * numCards);
 
-    const handleTransitionEnd = () => {
-      // Reset to the beginning when it reaches the end
-      setPosition(0);
-    };
+  //   const handleTransitionEnd = () => {
+  //     // Reset to the beginning when it reaches the end
+  //     setPosition(0);
+  //   };
 
-    rowRef.current.addEventListener('transitionend', handleTransitionEnd);
+  //   rowRef.current.addEventListener('transitionend', handleTransitionEnd);
 
-    // Cleanup event listener
-    return () => {
-      rowRef.current.removeEventListener('transitionend', handleTransitionEnd);
-    };
-  }, []);
+  //   // Cleanup event listener
+  //   return () => {
+  //     rowRef.current.removeEventListener('transitionend', handleTransitionEnd);
+  //   };
+  // }, []);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setPosition((prevPosition) => prevPosition - 320); // Adjust the value based on card width
-    }, 3000); // Adjust the interval as needed
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setPosition((prevPosition) => prevPosition - 320); // Adjust the value based on card width
+  //   }, 3000); // Adjust the interval as needed
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   const PropertiesBox = styled(Box)(({ theme }) => ({
     display: "flex",
@@ -68,7 +68,7 @@ const FeedBack = () => {
     display: 'flex',
     justifyContent: 'space-between', // Adjust as needed
     marginTop: '5px',
-    transform: `translateX(${position}px)`, // Update the transform property
+    // transform: `translateX(${position}px)`, // Update the transform property
     transition: 'transform 0.5s ease',
     flexWrap: 'nowrap', // Prevent cards from wrapping to the next line
     overflow: 'hidden', // Hide the overflow to prevent scrollbars
@@ -97,7 +97,7 @@ const FeedBack = () => {
 
        {/* <CustomerFeedBack/> */}
 
-       <div style={rowStyle} ref={rowRef}   >
+       <div style={rowStyle}    >
       <CustomerFeedBack style={cardStyle} />
       <CustomerFeedBack style={cardStyle} />
       <CustomerFeedBack style={cardStyle} />
