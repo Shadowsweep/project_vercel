@@ -5,6 +5,8 @@ import { properties } from "../properties";
 import SquareWithText from "./SquareWithText";
 import CustomerFeedBack from "./CustomerFeedBack";
 import { useState,useEffect , useRef} from "react";
+// import styled ,{keyframes , css} from "styled-components"
+import "./marquee.css"
 
 const FeedBack = () => {
 
@@ -97,11 +99,12 @@ const FeedBack = () => {
 
        {/* <CustomerFeedBack/> */}
 
-       <div style={rowStyle}    >
+       <div style={rowStyle} className="marquee"   >
       <CustomerFeedBack style={cardStyle} />
       <CustomerFeedBack style={cardStyle} />
       <CustomerFeedBack style={cardStyle} />
       <CustomerFeedBack style={cardStyle} />
+      
     </div>
 
        

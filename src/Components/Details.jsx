@@ -4,6 +4,8 @@ import React from "react";
 import houseCard from "../media/houseCard.png";
 import BlogCard from "./CardComponent";
 import { useState,useEffect , useRef} from "react";
+import "./marquee.css"
+
 
 const Details = () => {
   
@@ -157,7 +159,7 @@ const Details = () => {
       {/* <Container> */}
         
 
-        <div style={rowStyle}  >
+        <div style={rowStyle} className="marquee" >
       <BlogCard style={cardStyle} />
       <BlogCard style={cardStyle} />
       <BlogCard style={cardStyle} />
