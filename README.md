@@ -16,4 +16,22 @@ Check out the live demo [here](https://project-vercel-git-main-shadowsweep.verce
 
 ## Installation
 
-```bash git clone https://github.com/your-username/your-repo.git npm install npm start <details> <summary><strong>Copy Commands</strong></summary> bash Copy code git clone https://github.com/your-username/your-repo.git npm install npm start </details>
+Click the button to copy the commands:
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+npm install
+npm start
+```
+
+<details>
+<summary><strong>Copy Commands</strong></summary>
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+npm install
+npm start
+```
+
+</details>
+
