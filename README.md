@@ -1,7 +1,6 @@
 # Real Estate Responsive Application
 
-![Real Estate App](![image](https://github.com/Shadowsweep/project_vercel/assets/122604770/ec3ae5c8-14e4-4744-b1e3-47c1544372c9)
-)
+
 
 Designed a responsive Real State-app using React
 
