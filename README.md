@@ -18,20 +18,30 @@ Check out the live demo [here](https://project-vercel-git-main-shadowsweep.verce
 
 Click the button to copy the commands:
 
-```bash
-git clone https://github.com/your-username/your-repo.git
-npm install
-npm start
-```
-
-<details>
-<summary><strong>Copy Commands</strong></summary>
+## First Clone the repo : 
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-npm install
-npm start
+git clone https://github.com/Shadowsweep/project_vercel.git
+
 ```
 
-</details>
+# In Terminal :
+
+
+
+```bash
+npm install
+
+```
+
+# Now your project is ready :
+
+
+
+```bash
+npm start
+
+```
+
+
 
